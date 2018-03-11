@@ -1,0 +1,132 @@
+<!-- Bootstrap-Powered HTML -->
+
+<!-- Students:
+  1. Where is the HTML document drawing its styles from?
+
+  2. How does our browser know which element to style in which way? (ex: button face or background banner)
+-->
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+
+  <!-- We link our html to the Bootstrap CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+  <!-- Container Div -->
+  <div class="container">
+
+    <!-- Section 1: Navbar-->
+    <nav class="navbar navbar-default">
+
+      <!-- Place Fluid Container in Navbar -->
+      <div class="container-fluid">
+
+        <!-- Designate a navbar heading -->
+        <div class="navbar-header">
+
+          <!-- Collapsible button -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+
+              <!-- navbar button elements-->
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span> <!-- first line -->
+              <span class="icon-bar"></span> <!-- second line -->
+              <span class="icon-bar"></span> <!-- third line -->
+
+            </button>
+          <!-- Our brand / logo -->
+          <a class="navbar-brand" href="#">Claire's Portfolio</a>
+        </div>
+
+        <!-- The links of our navbar -->
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="index.html">About</a></li>
+              <li class="active"><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="contact.html">Contact</a></li>
+
+        </div>
+        <!--/.nav-collapse -->
+      </div>
+      <!--/.container-fluid -->
+    </nav>
+
+  
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+          
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="assets/imgs/research-2.jpg" alt="I conduct research">
+                <div class="carousel-caption">
+                        <h1>Governor's School</h1>
+                        <h3>I conducted research</h3>
+                      </div>
+              </div>
+          
+              <div class="item">
+                <img src="assets/imgs/alaska-2.jpg" alt="I travel">
+                <div class="carousel-caption">
+                        <h1>Alaska</h1>
+                        <h3>I camped in Alaska for two weeks</h3>
+                      </div>
+              </div>
+          
+              <div class="item">
+                    <img src="assets/imgs/gala-1.jpg" alt="I present my research">
+                    <div class="carousel-caption">
+                            <h1>The Da Vinci Science Center Gala</h1>
+                            <h3>I presented my research on Antioxidant Activity in Strawberries.</h3>
+                          </div>
+                  </div>
+
+
+              <div class="item">
+                    <img src="assets/imgs/golf-1.jpg" alt="I golf">
+                    <div class="carousel-caption">
+                            <h1>Trump National Golf Course</h1>
+                            <h3>I played golf and met Tiger Woods</h3>
+                          </div>
+              </div>
+            </div>
+          
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+
+
+
+
+  <!-- jQuery, javascript file for the Bootstrap's javascript file to function -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Bootstrap's javascript file that allows the dropdown menu to work  -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
